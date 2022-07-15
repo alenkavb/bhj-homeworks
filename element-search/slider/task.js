@@ -1,11 +1,9 @@
 function showNextSlider() {
   const currentSlider = document.querySelector('.slider__item_active');
-  console.log(currentSlider);
   currentSlider.classList.remove('slider__item_active');
 
   if (currentSlider.nextElementSibling) {
     const nextSlider = currentSlider.nextElementSibling;
-    console.log(nextSlider);
     nextSlider.classList.add('slider__item_active');
   } else {
     nextSlider = document.querySelector('.slider__item')
@@ -15,12 +13,10 @@ function showNextSlider() {
 
 function showPrevSlider() {
   const currentSlider = document.querySelector('.slider__item_active');
-  console.log(currentSlider);
   currentSlider.classList.remove('slider__item_active');
 
   if (currentSlider.previousElementSibling) {
     const prevSlider = currentSlider.previousElementSibling;
-    console.log(prevSlider);
     prevSlider.classList.add('slider__item_active');
   } else {
     const arr = Array.from(document.querySelectorAll('.slider__item'));
