@@ -8,7 +8,7 @@ const objReveals = document.querySelectorAll('.reveal');
             } else {
                 reveal.classList.remove('reveal_active');
             }
-        }, 500); 
+       }, 500); 
     })
 
 function isVisible(el) {
