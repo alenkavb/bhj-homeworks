@@ -1,5 +1,6 @@
 body {
   font-family: Arial;
+  padding: 12px;
 }
 .cart__products {
   display: flex;
