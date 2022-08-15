@@ -6,12 +6,12 @@ if (textInTextarea) {
   textArea.value = textInTextarea;
 }
  
-window.addEventListener("unload", () => {
-  localStorage.setItem('text', `${textArea.value}`);
-})
+textArea.oninput = () => {
+  localStorage.setItem('text', `${textArea.value.trim()}`);
+}
  
 btn.addEventListener('click', () => {
   textArea.value = "";
-  localStorage.clear;
+  localStorage.removeItem('text');
 })
  
