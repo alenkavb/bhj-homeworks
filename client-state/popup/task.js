@@ -1,5 +1,4 @@
-console.log(document.cookie);
-if (document.cookie === '') {
+if (!document.cookie.includes('isClose=true')) {
   const modalWindow = document.getElementById('subscribe-modal');
   modalWindow.classList.add('modal_active');
 }
